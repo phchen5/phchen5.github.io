@@ -306,6 +306,8 @@ figure {
 img,
 svg {
   vertical-align: middle;
+  display: block;
+  margin: auto;
 }
 
 table {
@@ -316,7 +318,7 @@ table {
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: #6c757d;
+  color: black;
   text-align: left;
 }
 
@@ -581,7 +583,7 @@ progress {
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.50rem;
 }
 .blockquote > :last-child {
   margin-bottom: 0;
@@ -599,6 +601,11 @@ progress {
 
 .img-fluid {
   max-width: 100%;
+  height: auto;
+}
+
+.img-category {
+  max-width: 70%;
   height: auto;
 }
 
@@ -7812,7 +7819,11 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: black !important;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: lightskyblue;
+  border-radius: 10px;
 }
 
 .text-black-50 {
@@ -10751,14 +10762,20 @@ header.masthead .post-heading .meta a {
   }
 }
 
-.section-heading {
+.section-heading-h2 {
   font-size: 2.25rem;
   font-weight: 700;
   margin-top: 3.75rem;
 }
 
+.section-heading-h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
 .caption {
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   font-style: italic;
   display: block;
   margin: 0;
