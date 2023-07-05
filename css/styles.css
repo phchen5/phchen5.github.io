@@ -502,6 +502,14 @@ progress {
   font-weight: 300;
 }
 
+.keywords-list {
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
@@ -622,7 +630,7 @@ progress {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .img-category {
@@ -673,7 +681,7 @@ progress {
 
 @media (min-width: 576px) {
   .container-sm, .container {
-    max-width: 540px;
+    max-width: 540;
   }
 }
 @media (min-width: 768px) {
