@@ -64,68 +64,61 @@
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <p> In statistics, we deal with all sorts of variables. They help us understand relationships and derive insights, so it’s important to have a good understanding of them. </p>
                         <p><mark><strong>Variables</strong></mark> are any characteristics, numbers or quantities that can be measured or counted. Examples of variables include gender, weight, income, grade, etc. Each variable consists of values that we call <mark><strong>data</strong></mark>. For example, the data values for gender could be Male and Female, or in other cases, just F and M. Consider the table below.</p>
-                        <p>As you go through each topic one by one, you'll slowly build up your statistical sense. Without further ado, let's begin with our first topic!</p>
-
-                        <hr>
-                        <h2 class="section-heading-h2">What is Statistics?</h2>
-                        <p><mark><strong>Statistics</strong></mark> is a branch of mathematics that transforms data into useful information for decision-makers. For example, consider the simple table of data below:</p>
-                        <a href="#!"><img class="img-fluid" src="assets/img/statistics-1-table.png" alt="..." /></a>
-                        <p>The table of data consists of 5 students and their grades. We can transform this table of data into more informative statistics like mean, maximum grade, minimum grade, etc. By adding all the grades and dividing by five, we can find that the mean grade is 57.6.</p>
-                        <p>$$\frac{60+56+58+66+48}{5}=57.6$$</p>
-                        <p>By calculating the mean score, the teacher can get a rough idea of how the class is performing as a whole. The teacher could also identify which students are underperforming and may need additional help. These interpretations of the statistic, however, would depend on domain knowledge. For example, we might think that the grade is out of 100 points, which would make the grade numbers look ugly. However, if the grade is only out of 70 points, then the results aren’t too bad after all. Knowing how many total points the grade is out of is <strong><mark>domain knowledge</mark></strong>. Combining domain knowledge with statistics, the teacher is able to derive useful insights for decision-making.</p>
+                        <img class="img-fluid" src="assets/img/blog-img/variables/statistics-2-table1.webp" alt="..." />
+                        <p>The first row presents the four variables: <em>Student_ID</em>, <em>Gender</em>, <em>Assignments_submitted</em> and <em>Final_grade</em>. The definitions of these variables should be pretty self-explanatory. The remaining cell values are the data. They represent the values measured or observed for the variable of their corresponding column.</p>
                         
                         <hr>
-                        <h2 class="section-heading-h2">Descriptive and Inferential Statistics</h2>
-                        <p>There are two main types of statistics:</p>
+                        <h2 class="section-heading-h2">Numerical and Categorical Variable</h2>
+                        <p>There are two main types of data type:</p>
                         <ul>
-                            <li>Descriptive Statitics</li>
-                            <li>Inferential Statistics</li>
+                            <li>Categorical Data</li>
+                            <li>Numerical Data</li>
                         </ul>
-                        <p>So what's the difference between these two statistics?</p>
-                        <h3 class="section-heading-h3">Descriptive Statistics</h3>
-                        <p><strong><mark>Descriptive Statistics</mark></strong> collect, summarize and describe data. Consider the same grade dataset but with 10 students. </p>
-                        <a href="#!"><img class="img-fluid" src="assets/img/statistics-1-table2.webp" alt="..." /></a>
-                        <p>We can derive a summary statistic for this small dataset easily.</p>
-                        <a href="#!"><img class="img-fluid" src="assets/img/statistics-1-summarystats.webp" alt="..." /></a>
-                        <p>The summary statistic here consists of <em>the count of observation</em>, <em>mean</em>, <em>standard deviation</em>, <em>minimum value</em>, <em>25% percentile</em>, <em>50% percentile</em> (median), <em>75% percentile</em> and <em>maximum value</em>. These statistics describe the grade of the 10 students and give us a good idea about the grade distribution. To visualize the distribution even better, we can even plot out a histogram. </p>
-                        <a href="#!"><img class="img-fluid" src="assets/img/statistics-1-distribution.webp" alt="..." /></a>
-                        <p>For those with zero background in statistics, you might have no idea what these summary statistics and graphs are about. Don't worry! We'll go through them in the coming stories. For now, just know that the summary statistics and the histogram are both descriptive statistics. They “describe” the data. </p>
-                        <h3 class="section-heading-h3">Inferential Statistics</h3>
-                        <p><mark><strong>Inferential Statistics</strong></mark> draw conclusions and/or make decisions concerning a population <u>based only on sample data</u>. Oftentimes, it’s merely impossible or too costly to gather data from every single target. If 10,000 people enrolled in a course, it would be silly to go to all 10,000 people to ask for their grades. A smarter and more efficient approach is to collect data from a portion (eg. say 300 people) of that 10,000 people and use that small portion to represent the entire 10,000 people.</p>
+                        <p>Let's start by discussing the categorical datatype.</p>
+                        <h3 class="section-heading-h3">Categorical Data</h3>
+                        <p><mark><strong>Categorical Data</strong></mark> are expressed in <u>discrete groups or categories</u>. Examples include:</p>
+                        <ul>
+                            <li><em>gender</em> (Male or Female)</li>
+                            <li><em>car models</em> (Tesla Model 3, BMW X5)</li>
+                            <li><em>letter grades</em> (A, B, C, D, F) </li>
+                        </ul>
+                        <p>Notice the data values are all in discrete groups or "categories". In the previous table, <em>Gender</em> is a categorical variable. By the data, a student’s gender falls into one of two categories: <em>F</em> (female) or <em>M</em> (male).</p>
+                        <h3 class="section-heading-h3">Numerical Data</h3>
+                        <p><mark><strong>Numerical Data</strong></mark> are expressed in numbers. Examples include:</p>
+                        <ul>
+                            <li><em>rating</em> (1-5)</li>
+                            <li><em>income</em> (20,000–100,000)</li>
+                            <li><em>number of students</em> (0–100)</li>
+                        </ul>
+                        <p>In the previous table, <em>Assignments_submitted</em> and <em>Final_grade</em> are numeric variables because their data values are in numbers. There is, however, a slight difference between <em>Assignments_submitted</em> and <em>Final_grade</em>. Let’s take a closer look at the two variables.</p>
+                        <img class="img-fluid" src="assets/img/blog-img/variables/statistics-2-table2.webp" alt="..." />
+                        <p>Have you noticed the difference? We can see that <em>Final_grade</em> has decimal points, whereas <em>Assignments_submitted</em> are pure integers. </p>
                         <blockquote class="blockquote">Terminology Alert!</blockquote>
-                        <p>The entire group that you want to draw conclusions about is called the <mark><strong>Population</strong></mark>. The small portion that you collect data from to represent the entire group is called the <mark><strong>Sample</strong></mark>. </p>
-                        <a href="#!"><img class="img-fluid" src="assets/img/statistics-1-populationsample.webp" alt="..." /></a>    
-                        <p>One important acknowledgment about extracting samples from the population is the sampling method. You can imagine that if you only select girls in your sample, the sample may not be representative of the population (because the population consists of both boys and girls). So it’s important to use an appropriate, non-biased sampling method. The most common sampling technique is <mark><strong>random sampling</strong></mark>, in which you can compare the selection process to that of picking from a hat blindfolded. Essentially, every single target in the population has an equal chance of being selected for the sample. </p>
-                        <p>By using an appropriate sampling method, your sample should more or less be representative of the population. After you collect data from your sample, you can calculate some measures (eg. mean) based on the sample data.</p>
-                        <blockquote class="blockquote">Terminology Alert!</blockquote>
-                        <p>Measures computed from the sample data are called <mark><strong>sample statistics</strong></mark> (eg. sample mean). Likewise, measures computed from the population data are called <mark><strong>population parameters</strong></mark> (eg. population mean). </p>
-                        <p>In inferential statistics, because we don’t have the capacity to collect data from every single entity in the population, we cannot derive the population parameter. (if we don’t have the population data, how can we calculate the population mean? It’s just not possible.)</p> 
-                        <span class="caption text-muted">Instead, we can only estimate the <strong>population parameter</strong>, and we estimate it using <strong>sample statistics</strong>.</span>
-                        <p>Samples should be representative of the population (as we discussed before using the appropriate sampling method), so the mean of the sample (sample statistics) should also be a good estimate of the mean of the population (population parameter). We say sample statistics are <mark><strong>unbiased estimators</strong></mark> of population parameters.</p>
-                        <p>This is the idea behind inferential statistics. We use a sample to make “inferences” about the greater population. The diagram below summarizes this process.</p>
-                        <a href="#!"><img class="img-fluid" src="assets/img/statistics-1-inferentialstats.webp" alt="..." /></a>
-                        <ol>
-                            <li>What is your goal for the study? Determine the population of your subject and what you want to learn about the subject (population parameters).</li>
-                            <li>Select a sample from the population (with the appropriate sampling technique).</li>
-                            <li>Collect raw data from the sample and summarize the raw data.</li>
-                            <li>Use sample statistics to make inferences about the population parameters.</li>
-                            <li>Draw conclusions; determine what you learned and whether you achieved your goal.</li>
-                        </ol>
+                        <p><em>Final_grade</em> and <em>Assignments_submitted</em> each represent the two types of numeric variables:</p>
+                        <ul>
+                            <li>Continuous Numeric Variable</li>
+                            <li>Discrete Numeric Variable</li>
+                        </ul>
+                        <p>By definition, <mark><strong>Continuous Numeric Variables</strong></mark> are measured items. In other words, continuous numeric variables can occupy any value over a continuous range. In our table of data, <em>Final_grade</em> is a continuous numeric variable because it can basically take any value ranging from 0–100, including decimal and fraction values. </p>
+                        <p><mark><strong>Discrete Numeric Variables</strong></mark>, on the other hand, are counted items. That means discrete numeric variables can only take integer values. <em>Assignments_submitted</em> is a discrete numeric variable because its values can only be integers. It wouldn’t make sense for a student to submit eg. 2.5 assignments. </p>
+                        <span class="caption text-muted">So a good way to differentiate between a <strong>discrete</strong> and <strong>continuous</strong> variable is to consider <u>whether the variable would make sense to take on a decimal or a fraction value</u>. The number of cars someone owns, for example, would be discrete, because it doesn’t make sense to own 1.7 cars.</span>
+                        <h3 class="section-heading-h3">Time Data</h3>
+                        <p>Some variables like time and age are trickier to identify. While time is technically continuous because you can be infinitely precise to the milliseconds, it still depends on how it was recorded. In cases where time is recorded in intervals of years, weeks, days or even hours, time is rather discrete. When you record time to the exact moment in seconds, then it is rather continuous. It can be hard to tell sometimes.</p>
+                        
+                        <hr>
+                        <h2 class="section-heading-h2">Categorical Encoding</h2>
+                        <p>When you perform statistical analysis with a computer, you need to translate your data such that your computer can understand it. One thing computers struggle to understand is character values. Thus, it is common practice to encode categorical values (known as <mark><strong>Categorical Encoding</strong></mark>) into numeric values so computers can understand the data. Let’s look at a simple example.</p>
+                        <img class="img-fluid" src="assets/img/blog-img/variables/statistics-2-table3.webp" alt="..." />
+                        <p>In the table above, we can see the data values for <em>Color</em> are numbers 1–5. Instinctively, we might think that <em>Color</em> is a numerical variable because its data values are numbers. This claim, however, is not true because each number actually represents a separate color.</p>
+                        <img class="img-fluid" src="assets/img/blog-img/variables/statistics-2-table4.webp" alt="..." />\
+                        <p>Given the table above, we can see that the number 1 actually represents blue, number 2 represents green and so on. <em>Color</em> is actually a categorical variable, despite its values being represented in numbers. <u>The takeaway here is that it’s important to understand the meaning of the variables and what their values represent.</u> Again, the colors are represented in numbers because they had been encoded into numbers so that computers can understand. There are many different methods of encoding, but that would be for another story.</p>
 
                         <hr>
                         <h2 class="section-heading-h2">Conclusion</h2>
-                        <p>Well done on your first completed story! We just discussed:</p>
-                        <ul>
-                            <li>What is statistics</li>
-                            <li>Descriptive and inferential statistics</li>
-                            <li>Population and sample</li>
-                            <li>Parameters and statistics</li>
-                            <li>Process of statistical study</li>
-                        </ul>
-                        <p>We also stressed the importance of an appropriate sampling method. Take some time to digest the information, but be aware that this is just the surface of a tremendous field of study. We’re not even done with our first topic of the series. In the next story, we’ll talk about variables!</p>
-                        
+                        <p>Congratulations on completing another post! In this post, we discussed the two types of variables, categorical and numerical. And under numerical variables, we again branched into discrete numeric variables and continuous numeric variables. We also discussed how encoding enables computers to understand character data values. Next, we’ll move on to introducing basic data visualization.</p>
+
                         <hr>
-                        <a class="section-heading-h3" href="#!">Next: Numerical and Categorical Variables</a>
+                        <a class="section-heading-h3" href="#!">Next: Basic Data Visualization in Statistics</a>
                         
                     </div>
                 </div>
