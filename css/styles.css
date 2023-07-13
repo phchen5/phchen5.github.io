@@ -10925,3 +10925,31 @@ header.masthead .post-heading .meta a {
   width: 100px;
   margin-bottom: 10px;
 }
+
+.red-text {
+  color: red;
+}
+.green-text {
+  color: green;
+}
+.orange-text {
+  color: orange;
+}
+.violet-text {
+  color: violet;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: darkgray;
+  color: white;
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Ben's Blog - The Three Aspects of a Distribution</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <!-- Latex -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$', '$']]}})
+        </script>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="../index.html">Ben's Blog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../blog-main.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../kaggle-main.html">Kaggle</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../course-materials.html">Study Materials</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('../assets/img/blog-img/page-of-content/statistics-4-topicbackground.webp')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>The Three Aspects of a Distribution</h1>
+                            <h2 class="subheading">Central Tendency, Variation and Shape.</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="../about.html">Ben Chen</a>
+                                on September 22, 2021
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>In this story, we will go over the three main aspects pertaining to a distribution.</p>
+                        <ol>
+                            <li>Central Tendency</li>
+                            <li>Variation</li>
+                            <li>Shape</li>
+                        </ol>
+                        <p>We will break down each aspect one by one and discuss the measures that are used to describe each aspect. Let’s go!</p>
+                        <h2 class="section-heading-h2">The Three Aspects</h2>
+                        <p>Let's begin by defining the three aspects.</p>
+                        <ul>
+                            <li><mark><strong>Central Tendency</strong></mark> – describes the <u>center</u> of a distribution</li>
+                            <li><mark><strong>Variation</strong></mark> – describes the dispersion (<u>spread</u>) of a distribution</li>
+                            <li><mark><strong>Shape</strong></mark> – describes the <u>pattern</u> of a distribution</li>
+                        </ul>
+                        <p>Pretty simple right? To make things even more clear, let’s visualize some distributions.</p>
+                        <img class="img-fluid" src="../assets/img/blog-img/three-aspects-of-distribution/two-distribution.webp" alt="..." />
+                        <p>In the graph above, we have two distributions. It is pretty clear that the two distributions have different centers of gravity. The <span class="red-text">red distribution</span> appears to center around 5, while the <span class="green-text">green distribution</span> appears to center around 10. These two distributions are marked by different ‘centers’, or <u>central tendencies</u>.</p>
+                        <p>Now you should also realize that the two distributions also have different spreads. The <span class="red-text">red distribution</span> is thinner and more focused around its center, whereas the <span class="green-text">green distribution</span> is fatter and spreads out more. This spread around the center of the distribution is what we refer to as <u>variation</u>. </p>
+                        <p>Finally, the <u>shape</u> is just the ‘shape’ of the distribution. If you ignore the fact that the two distributions have different central tendency and variation, their shape is pretty similar. Below are just some examples of what distributions can look like. We’ll also discuss a few of these later.</p>
+                        <p>Now that we understand what each of these aspects means, let’s see what measures and statistics help us <u>quantify</u> these aspects.</p>
+
+                        <hr>
+                        <h2 class="section-heading-h2">Central Tendency</h2>
+                        <p>To quantify central tendency (where the center of the distribution is), we have the 3Ms: mean, median and mode. </p>
+                        <h3 class="section-heading-h3">Mean</h3>
+                        <p><mark><strong>Mean</strong></mark> is the average value, and it can refer to either the <u>population mean</u> or <u>sample mean</u>. The population mean is just the mean of the population, and the sample mean is just the mean of the sample. If you don’t recall the difference between a population and a sample, I recommend you go back to review <a href="statistics-1.html">Introduction to Statistical Study</a>. Population mean and sample mean have different notations, $\mu$ (pronounced as mu) and $\bar{x}$, respectively. To calculate mean, you simply add up all the values and divide them by the number of values.</p>
+                        <p>$$\text{Sample Mean: }\bar{X}=\frac{\sum_{i=1}^nX_i}{n}=\frac{X_1+X_2+\dots+X_n}{n}$$</p>
+                        <p>$$\text{Population Mean: }\mu=\frac{\sum_{i=1}^NX_i}{N}=\frac{X_1+X_2+\dots+X_N}{N}$$</p>
+                        <p>Lowercase $n$ stands for the sample size and capitalized $N$ stands for the population size. These notations do make a difference so make sure you remember them thoroughly. </p>
+                        <h3 class="section-heading-h3">Median</h3>
+                        <p><mark><strong>Median</strong></mark> is the middle value of the sorted data. In other words, if you sort the data from smallest to largest, the median will be the value in the middle. </p>
+                        <ul>
+                            <li>In the case where $n$ or $N$ is an <u>odd number</u> (the first line of data below), there will be an undisputed middle value. </li>
+                            <li>But in the case where $n$ or $N$ is an <u>even number</u> (the second line of data below), the median becomes the average of the 2 middle values. </li>
+                        </ul>
+                        <img class="img-fluid" src="../assets/img/blog-img/three-aspects-of-distribution/median.webp" alt="..." />
+                        <h3 class="section-heading-h3">Mode</h3>
+                        <p><mark><strong>Mode</strong></mark> is the value that occurs the most. It is possible to have no modes when all values occur just once. In other scenarios, you could also have multiple modes when multiple values top the number of occurrences simultaneously. Mode is the only measure out of the 3Ms that can be applied to categorical data as well.</p>
+                        <h3 class="section-heading-h3">The Effects of Outliers</h3>
+                        <p>Recall that when we measure central tendency, we are trying to figure out the center of the distribution. Our measurement could be disrupted by <mark><strong>Outliers</strong></mark>, values that lie at an abnormal distance from other values in the distribution. So how do the 3Ms react in the presence of outliers?</p>
+                        <p>In summary:</p>
+                        <ul>
+                            <li>Mean is affected by outliers. Outliers tend to pull the mean toward their ends. </li>
+                            <li>Median is not affected by outliers. Outliers do little to change the value of the middle value.</li>
+                            <li>Mode is also not affected by outliers. The presence of extreme values is unlikely going to change the fact that the mode has the highest frequency.</li>
+                        </ul>
+                        <p>We can do a little experiment to justify these claims. Consider two datasets, one with an outlier and one without an outlier.</p>
+                        <p style="text-align: center;">Without Outlier: 3, 5, 4, 5, 6, 4, 3, 4, 5, 5, 3, 6</p>
+                        <p style="text-align: center;">With Outlier: 3, 5, 4, 5, 6, 4, 3, 4, 5, 5, 3, <span class="red-text">40</span></p>
+                        <p>Just by eyeballing the data, we can see that values generally fall around 4-5. The outlier (the 40 in red) is usually not representative of the data so let’s ignore it for now. We’re expecting values 4-5 as good measures of central tendency.</p>
+                        <p>Now let’s calculate the 3Ms for each of the datasets.</p>
+
+                        <table>
+                            <tr>
+                              <th style="background-color: gray;">Central Tendency Measure</th>
+                              <th>Without Outlier</th>
+                              <th>With Outlier</th>
+                            </tr>
+                            <tr>
+                              <th>Mean</th>
+                              <td>4.417</td>
+                              <td>7.25</td>
+                            </tr>
+                            <tr>
+                              <th>Median</th>
+                              <td>4.5</td>
+                              <td>4.5</td>
+                            </tr>
+                            <tr>
+                                <th>Mode</th>
+                                <td>5</td>
+                                <td>5</td>
+                              </tr>
+                        </table>
+                        <p>We can see that, despite the presence of an outlier, the median and mode didn’t change at all. They maintained at 4.5 and 5, which are good estimates of central tendency. The mean, however, increased to 7.25. The mean value is far from 4-5, making it a bad measure of central tendency in this case. The takeaway here is:</p>
+                        <span class="caption text-muted">Because mean is more subjected to change by outliers, median and mode should be preferred over mean as the measure of central tendency in the presence of outliers. </span><br>
+
+                        <hr>
+                        <h2 class="section-heading-h2">Variation</h2>
+                        <p>Next, let’s try to quantify variation, or the spread of the distribution. We have five measures that quantify spread: range, quartiles, IQR, variance and standard deviation. Let’s begin with the most straightforward measure, range. </p>
+                        <h3 class="section-heading-h3">Range</h3>
+                        <p>The <mark><strong>Range</strong></mark> is just the difference between the largest and smallest values. In a sense, the range does tell us how spread out the distribution is, but it’s not a very detailed measure. We don’t know anything about the distribution other than its most extreme values. The range value relies solely on the largest and smallest value, so it is also very sensitive to outliers</p>
+                        <p>$$\text{Range} = X_{\text{largest}}-X_{\text{smallest}}$$</p>
+                        <h3 class="section-heading-h3">Quartiles</h3>
+                        <p><mark><strong>Quartiles</strong></mark> are values that split the sorted data into 4 segments with an equal number of values in each segment. The illustration below should be more than clear.</p>
+                        <img class="img-fluid" src="../assets/img/blog-img/three-aspects-of-distribution/quantiles.webp" alt="..." />
+                        <p>25% of the smallest observations will fall below Q1 and 25% of the largest observations will be greater than Q3. Q2 is the same as the median. To find the three quartiles, we can use the following formulas to find their corresponding index in the sorted data.</p>
+                        <p>$$\text{Index of Q1} = \frac{n+1}{4}$$</p>
+                        <p>$$\text{Index of Q2} = \frac{2(n+1)}{4}$$</p>
+                        <p>$$\text{Index of Q3} = \frac{3(n+1)}{4}$$</p>
+                        <ul>
+                            <li>If the calculated index is a fractional half, then we take the average of the two corresponding data values. </li>
+                            <li>If the calculated index is a fraction but not a fractional half, then we round the result to the nearest integer to find the ranked position.</li>
+                        </ul>
+                        <p>Don’t worry if you don’t understand. Let’s try an example. Consider the following sorted dataset:</p>
+                        <p>$$3, 5, 5, 7, 9, 10, 12, 15, 15, 16$$</p>
+                        <p>This data has 10 observations ($n=10$), so we can fit $n$ into the equations to calculate the index of the quartiles.</p>
+                        <p>$$\text{Index of Q1} = \frac{10+1}{4}=2.75$$</p>
+                        <p>$$\text{Index of Q2} = \frac{2(10+1)}{4}=5.5$$</p>
+                        <p>$$\text{Index of Q3} = \frac{3(10+1)}{4}=8.25$$</p>
+                        <p>The index for <span class="orange-text">Q1</span> is 2.75, a fraction but not a fractional half. Therefore we round 2.75 to the nearest index which is 3. That means the 3rd value in the sorted order (which is 5) is Q1.</p>
+                        <p>$$\text{Q1} = 5$$</p>
+                        <table>
+                            <tr>
+                              <th>Data</th>
+                              <td>3</td>
+                              <td>5</td>
+                              <td style="background-color: orange;">5</td>
+                              <td>7</td>
+                              <td style="background-color: violet;">9</td>
+                              <td style="background-color: violet;">10</td>
+                              <td>12</td>
+                              <td style="background-color: green;">15</td>
+                              <td>15</td>
+                              <td>16</td>
+                            </tr>
+                            <tr>
+                              <th>Index</th>
+                              <td>1</td>
+                              <td>2</td>
+                              <td style="background-color: orange;">3</td>
+                              <td>4</td>
+                              <td style="background-color: violet;">5</td>
+                              <td style="background-color: violet;">6</td>
+                              <td>7</td>
+                              <td style="background-color: green;">8</td>
+                              <td>9</td>
+                              <td>10</td>
+                            </tr>
+                        </table>
+
+                        <p>The index for <span class="violet-text">Q2</span> is 5.5, a fractional half. Therefore, Q2 will be the average of the value at index 5 (which is 9) and the value at index 6 (which is 10).</p>
+                        <p>$$\text{Q2} = \frac{9+10}{2}=9.5$$</p>
+                        <p>The index for <span class="green-text">Q3</span> is 8.25, a fraction but not a fractional half. Like Q1, we round the index to the nearest integer 8. Q3 is the 8th value in the sorted order.</p>
+                        <p>$$\text{Q3} = 15$$</p>
+                        <h3 class="section-heading-h3">Interquartile Range (IQR)</h3>
+                        <p><mark><strong>IQR</strong></mark> is the abbreviation for interquartile range and it measures the spread of the middle 50% of data. In other words, IQR is the difference between Q3 and Q1.</p>
+                        <p>$$\text{IQR} = \text{Q3}-\text{Q1}$$</p>
+                        <p>For the example that we just used, we can find the IQR as 10.</p>
+                        <p>$$\text{IQR} = 15-5=10$$</p>
+                        <p>Furthermore, the IQR could actually be used to find outliers within a set of data. The rule of thumb is:</p>
+                        <span class="caption text-muted">If the value falls outside of range below, then the value is considered an outlier.</span>
+                        <p>$$[Q_1-1.5\times\text{IQR}, Q_3+1.5\times\text{IQR}]$$</p>
+                        <p>Let's consider another example with the following array of sorted data.</p>
+                        <p>$$11, 12, 13, 16, 16, 17, 18, 21, 22$$</p>
+                        <p>If we use the index equation to find the quartiles, we will arrive at the following results (use this as an opportunity to practice for yourself):</p>
+                        <p>$$Q_1=12.5$$</p>
+                        <p>$$Q_2=16$$</p>
+                        <p>$$Q_3=19.5$$</p>
+                        <p>$$\text{IQR}=7$$</p>
+                        <p>Now we can plug these values into the range to see if we have any outliers.</p>
+                        <p>$$[12.5-1.5\times7, 19.5+1.5\times7]=[2,30]$$</p>
+                        <p>According to the rule of thumb, any values less than 2 and greater than 30 are outliers, and it appears that there are no outliers in our data.</p>
+                        <h3 class="section-heading-h3">Variance and Standard Deviation</h3>
+                        <p><mark><strong>Variance</strong></mark> and <mark><strong>Standard Deviation</strong></mark> (I’ll use <em>std</em> as an abbreviation from time to time) are arguably the most common measures of variation that you will encounter in your statistics career. Both these two statistics measure the spread of data around the mean. So what’s the difference between the two? Let’s just directly look at the formula.
+                        </p>
+                        <img class="img-fluid" src="../assets/img/blog-img/three-aspects-of-distribution/var-and-std.webp" alt="..." />
+                        <p>Don't be scared by the formula. It's actually really simple if you break it down. We can see that the standard deviation is just the square root of variance. If you have one of either value, then you can easily derive the other. </p>
+                        <span class="caption text-muted">The main difference between the variance and the standard deviation is their units. The standard deviation is expressed in the same unit as the mean, whereas the variance is expressed in squared units. Therefore, the standard deviation usually gives a more comparable idea about the spread of the distribution.</span>
+                        <p>But at the end of the day, both measures can be used to represent the variation of a distribution. The larger the variance/std, the more spread out the distribution.</p>
+                        <img class="img-fluid" src="../assets/img/blog-img/three-aspects-of-distribution/large-small-std.webp" alt="..." />
+                        <h3 class="section-heading-h3">Why does sample variance/std divide by n-1? (Advanced)</h3>
+                        <p>In case you’re curious why sample variance/standard deviation divide by n-1, here is why.</p>
+                        <span class="caption text-muted">
+                            <p>To put it simply, (n−1) is a smaller number than (n). When you divide by a smaller number you get a larger number. Therefore, when you divide by (n−1), <u>the sample variance will work out to be a larger number</u>. </p>
+                            <p>Let's think about what a larger vs. smaller sample variance means. If the sample variance is larger, then <u>there is a greater chance that it captures the true population variance</u>. That is why when you divide by (n−1) we call that an <u>unbiased sample estimate</u>, whereas dividing by (n) is called a <u>biased sample estimate</u>. </p>
+                            <p>Because we are trying to reveal information about a population by calculating the variance from a sample set we probably do not want to underestimate the variance. Basically, by just dividing by (n), we are underestimating the true population variance, that is why it is called a biased estimate. </p>
+                        </span>
+                        <p>Don't worry if you don't understand this explanation. This requires a strong understanding of the relationship between population parameters and sample statistics. For now, you can stick to memorizing the formula.</p>
+                        <p>Finally, range, IQR, variance and standard deviation will never be smaller than 0. The smallest they can get is 0, where all of the values are the same (no spread/variation whatsoever).</p>
+
+                        <hr>
+                        <h2 class="section-heading-h2">Shape</h2>
+                        <p>We have arrived at the last aspect of distribution, shape. We previously mentioned that a distribution could take on many shapes. Here, I’ll only discuss one specific shape of a distribution, a skewed distribution.</p>
+                        <p><mark><strong>Skewness</strong></mark> is the property that describes the extent of symmetry for the distribution. </p>
+                        <ul>
+                            <li>A skewness of 0 means that the distribution is symmetrical. </li>
+                            <li>A skewness less than 0 means that the distribution is left-skewed. </li>
+                            <li>A skewness greater than 0 means that the distribution is right-skewed. </li>
+                        </ul>
+                        <p>Let’s first see the difference between a left-skewed distribution and a right-skewed distribution. </p>
+                        <img class="img-fluid" src="../assets/img/blog-img/three-aspects-of-distribution/skewness.webp" alt="..." />
+                        <p>A good way to remember which side is which is to look at your feet. If you draw a distribution over the toes of your left foot, then you have a left-skewed distribution. If you draw a distribution over the toes of your right foot, then you have a right-skewed distribution. Pretty cool right!</p>
+                        <p>Anyways, you might have noticed from the picture above that you can also compare the mean and median to see whether the distribution is skewed. The rules are simple:</p>
+                        <ul>
+                            <li>If mean < median, then it is left-skewed </li>
+                            <li>If mean == median, then it is symmetric</li>
+                            <li>If mean > median, then it is right-skewed</li>
+                        </ul>
+                        <p>Now, these general rules won’t apply in every single case. If you have a very random, complicated distribution, then you can’t just conclude that the distribution is skewed by comparing the mean and the median. But you should be able to see why these rules are the way they are and will typically be the case if the distribution is not too weird. If you have a right-skewed distribution, then you have these large outliers to the right of the distribution. They pull the mean to the right because the mean is more sensitive to outliers, but the median stays about the same because the median isn’t very sensitive to outliers. That’s why the mean will usually be larger than the median in the right-skewed distribution. The same logic applies to a left-skewed distribution. </p>
+                        <h3 class="section-heading-h3">Five-number Summary</h3>
+                        <p>The <mark><strong>Five-number Summary</strong></mark> includes five numbers that describe the shape of the distribution. The five numbers are the smallest observation, Q1, median (Q2), Q3 and the largest observation. The plot form of a five-number summary is what we commonly refer to as a <mark><strong>Boxplot</strong></mark>.</p>
+                        <img class="img-fluid" src="../assets/img/blog-img/three-aspects-of-distribution/five-num-summary.webp" alt="..." />
+                        <p>A boxplot can be seen as a very simple representation of the distribution. We can also estimate the skewness by looking at the boxplot. The following picture summarizes it all:</p>
+                        <img class="img-fluid" src="../assets/img/blog-img/three-aspects-of-distribution/box-plot-skewness.webp" alt="..." />
+                        <p>As you can see above, there are three comparisons that we can do. If you’re confused by the rules, maybe this picture below will help illustrate them.</p>
+                        <img class="img-fluid" src="../assets/img/blog-img/three-aspects-of-distribution/box-plot-skewness-2.webp" alt="..." />
+                        <p>Sometimes the rules will contradict each other. The comparison of A and B might indicate that the distribution is right-skewed, but the comparison of C and D might indicate otherwise. In this case, we might have to refer to the comparison of E and F (the third rule) as the deal breaker. </p>
+
+                        <h2 class="section-heading-h2">Conclusion</h2>
+                        <p>Wow! We covered quite a lot. We discussed the three main aspects of distribution:</p>
+                        <ol>
+                            <li>Central Tendency</li>
+                            <li>Variation</li>
+                            <li>Shape</li>
+                        </ol>
+                        <p>We mentioned the different statistics and measures that quantified the three aspects. A lot of formulas and calculations for sure, but a proper calculator and a formula sheet are all you need. It's more important that you understand what each of these statistics means. In our next story, we will move on to the topic of probability. </p>
+                        
+                        <hr>
+                        <a class="section-heading-h3" href="../blog-files/statistics-5.html">Next: Probability</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <!-- Icons from Font Awesome -->
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://www.kaggle.com/phchen5" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-kaggle fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/@bensvlog10" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/phchen5" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Ben's Blog 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>

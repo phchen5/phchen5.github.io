@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Ben's Blog - Basic Data Visualization in Statistics</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <!-- Latex -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$', '$']]}})
+        </script>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="../index.html">Ben's Blog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../blog-main.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../kaggle-main.html">Kaggle</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../course-materials.html">Study Materials</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('../assets/img/blog-img/page-of-content/statistics-3-topicbackground.webp')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Basic Data Visualization in Statistics</h1>
+                            <h2 class="subheading">Bar charts, histograms, pie charts, etc...</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="../about.html">Ben Chen</a>
+                                on September 15, 2021
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>In this story, we will go through the most basic, and arguably the most commonly used, data visualizations in statistics. Data visualization plays a huge role in performing statistical and data analysis. It allows us to quickly extract insights and understand the overall picture of a dataset. </p>
+                        <p>The most appropriate visualization depends on the variable type and the dataset. Certain visualizations can only be applied to categorical variables, while others are more suited to numeric variables. Let’s discuss the visualizations for categorical variables first. </p>
+
+                        <hr>
+                        <h2 class="section-heading-h2">Visualizations for Categorical Variables</h2>
+                        <p>The three visualizations for categorical variables we'll be discussing are:</p>
+                        <ol>
+                            <li>Summary Table</li>
+                            <li>Bar Chart</li>
+                            <li>Pie Chart</li>
+                        </ol>
+                        <h3 class="section-heading-h3">Summary Table</h3>
+                        <img class="img-fluid" src="../assets/img/blog-img/basic-data-viz/summary-table.webp" alt="..." />
+                        <p>A <mark><strong>Summary Table</strong></mark> is a visualization that summarizes statistical information in a table. We can see that the summary table above records the color and the number of customers that correspond to each color. While we don’t have a lot of understanding of the data, we can assume this dataset is about customers’ favorite colors. It appears that customers tend to prefer green (30 customers). Blue and red have an equal preference at a count of 15.</p>
+                        <blockquote class="blockquote">Terminology Alert!</blockquote>
+                        <p>The count is also called <mark><strong>frequency</strong></mark> in statistical terms. </p>
+                        <h3 class="section-heading-h3">Summary Table</h3>
+                        <p>A summary table wouldn’t always be the preferred visualization. In cases where frequencies are huge numbers and close to each other, it may become quite hard to identify anomalies from the table. In that case, a <mark><strong>Bar Chart</strong></mark> will do a much better job.</p>
+                        <img class="img-fluid" src="../assets/img/blog-img/basic-data-viz/bar-chart.webp" alt="..." />
+                        <p>The bar chart allows us to easily identify green as the most popular color without looking at any numbers. We have the colors on the x-axis and the frequency on the y-axis. Bar charts can also be represented in percentage (also called <mark><strong>Relative Frequency</strong></mark> in statistical terms). You can see below that the bar chart in relative frequency looks exactly the same as it is in frequency. The only difference is in the label used on the y-axis.</p>
+                        <img class="img-fluid" src="../assets/img/blog-img/basic-data-viz/relative-freq.webp" alt="..." />
+                        <p>The only concern when you construct a bar chart is you have to ensure that the gaps between two bars and the width of the bars are consistent. Any inconsistencies could lead to misperceptions. </p>
+                        <h3 class="section-heading-h3">Pie Chart</h3>
+                        <img class="img-fluid" src="../assets/img/blog-img/basic-data-viz/pie-chart.webp" alt="..." />
+                        <p>Next, we have pie charts. <mark><strong>Pie Charts</strong></mark> present the categories relative to each other, allowing a clearer comparison of categories as a whole. Slices (each category) are <strong>mutually exclusive</strong> (don’t overlap) and <strong>collectively exhaustive</strong> (sum up to 100%). We'll discuss these two terms in more detail under <a href="#!">probability</a>.  Labels of the percentage or count of each category should be displayed in case it becomes difficult to compare slices of similar size.</p>
+                        <p>So far, we’ve discussed visualizations for categorical data. Let’s move forward to talk about visualizations for numerical data. </p>
+
+                        <hr>
+                        <h2 class="section-heading-h2">Visualizations for Numerical Variables</h2>
+                        <p>In this story, we will discuss two visualizations for numerical data:</p>
+                        <ol>
+                            <li>Frequency Distribution</li>
+                            <li>Histogram</li>
+                        </ol>
+                        <h3 class="section-heading-h3">Frequency Distribution</h3>
+                        <p>Numerical data can span a huge range. Therefore, to visualize numerical data, we need to group the numbers into intervals (or classes). A table that displays the frequency in each interval is the <mark><strong>Frequency Distribution</strong></mark>. Here's an example:</p>
+                        <img class="img-fluid" src="../assets/img/blog-img/basic-data-viz/freq-distribution.webp" alt="..." />
+                        <p>We can see from this frequency distribution that, out of 100 observations, 40 of them have <em>Amount Spent</em> ($) fall under the interval 0–100. Only 22 observations have <em>Amount Spent</em> ($) fall under the interval 100–200, and so on. From this table, we can identify the interval where most data points fall, and thus understand how Amount Spent ($) is distributed. </p>
+                        <p>To build a frequency distribution, we can follow these simple steps:</p>
+                        <ol>
+                            <li>Sort data in ascending order (by the value of the numerical variable)</li>
+                            <li>Calculate the range (largest value minus smallest value)</li>
+                            <li>Select the number of classes of your choice (eg. 10 classes)</li>
+                            <li>Compute the class interval width (range ÷ number of classes) which you may round to a more convenient number</li>
+                            <li>Determine class boundaries (an interval 0–100 has a lower boundary of 0 and an upper boundary of 100)</li>
+                            <li>Allocate observations to each class and count the number of observations in each class (frequency)</li>
+                        </ol>
+                        <p>There is no single answer to building a frequency distribution since the results would look different if you had a different intended number of classes. As long as you have a reasonable number of classes, and allocate the observations into the classes correctly, your frequency distribution can’t be wrong. Just like the bar chart, be sure that the width of each interval is identical. Only in very special circumstances can intervals be unequal. In addition, class boundaries typically include the lower boundaries, but not the upper boundaries. You can go the other way around, but just stay consistent.</p>
+                        <h3 class="section-heading-h3">Histogram</h3>
+                        <p>Once you understand how to read and construct a frequency distribution, a <mark><strong>Histogram</strong></mark> should also be easy to understand. The histogram is just a graphical representation of the frequency distribution.</p>
+                        <img class="img-fluid" src="../assets/img/blog-img/basic-data-viz/histogram.webp" alt="..." />
+                        <p>You can see we have the intervals on the x-axis and the frequency on the y-axis. Again, the width of bars and intervals are consistent. Some may ponder upon the difference between a histogram and a bar chart. If you still haven’t realized it, you can see that there are no gaps in between intervals. The bars are interconnected because <em>Amount Spent</em> ($) is a numerical variable and it could be any value within a specified range. </p>
+                        <span class="caption text-muted">The difference between a bar chart and a histogram is that <u>bar charts display categorical data whereas histograms display numerical data</u>. That is why the bars in a bar chart are separated because each value is a separate entity in itself.</span>
+                        <p>Finally, frequency distributions and histograms could also be represented in relative frequency.</p>
+
+                        <hr>
+                        <h2 class="section-heading-h2">Faulty Graphs</h2>
+                        <p>Good job! We just learned the most basic visualizations in statistics. There are still plenty of visualizations out there, but let’s stop here for now. Instead, let’s focus on some traits of faulty graphs. To construct good visualization, we have to know what constitutes a bad one. I’ll go over the most common mistakes people make when building a graph.</p>
+                        <h3 class="section-heading-h3">No Chart Junks!</h3>
+                        <p>Keep your graph simple. People often try to add complicated yet uninformative decorations to embellish their graphs. In the visualizations below, we can see that the one to the left includes money icons, whose size is likely dependent on the national wage index. We call these unnecessary visualizations <mark><strong>Chart Junk</strong></mark>. Chart junks don’t facilitate any comparison and make the visualization as a whole difficult to interpret.</p>
+                        <img class="img-fluid" src="../assets/img/blog-img/basic-data-viz/faulty-graph-1.webp" alt="..." />
+                        <h3 class="section-heading-h3">No Relative Bias!</h3>
+                        <p>In the left graph below, it appears that students in the marketing program scored the most A grades. This may be misleading because it doesn’t take into account the number of students in each program. It would be unfair to compare the number of students who scored an A between programs if there are 1000 marketing students and only 100 accounting students. The graph to the right uses percentage instead of frequency on the y-axis, and we can see that students from the BA program actually have the greatest proportion of As.</p>
+                        <img class="img-fluid" src="../assets/img/blog-img/basic-data-viz/faulty-graph-2.webp" alt="..." />
+                        <h3 class="section-heading-h3">Compress the Vertical Axis!</h3>
+                        <p>INot only does the graph to the left not utilize the empty space on the top, but it also makes the unemployment trend flatter, making it harder to visualize. The graph to the right provides a much better reflection of the fluctuation in the unemployment rate throughout the years.</p>
+                        <img class="img-fluid" src="../assets/img/blog-img/basic-data-viz/faulty-graph-3.webp" alt="..." />
+                        <h3 class="section-heading-h3">Include Point Zero!</h3>
+                        <p>When values get too big (usually on the y-axis), people often forget the importance of starting their axes from 0. It may give the impression that values are much smaller than they actually are. Consider the graph to the left below. The Hang Seng Index appears to fall to a very low point at around 10 Jun, but if you look more carefully, the index is still around 26,500. It appears the best way to fix this issue is to extend the y-axis such that it starts from 0, but this would also be impractical because that would create a lot of empty space. So the best way to approach this problem is to insert a break symbol. The <mark><strong>Break Symbol</strong></mark> is utilized in the graph to the right at the bottom of the y-axis. It serves to remind readers that a huge section of white space is removed. With the break symbol, the y-axis can now start from 0.</p>
+                        <img class="img-fluid" src="../assets/img/blog-img/basic-data-viz/faulty-graph-4.webp" alt="..." />
+                        <h3 class="section-heading-h3">Other Bad Traits:</h3>
+                        <ul>
+                            <li>Inconsistent intervals</li>
+                            <li>Missing title and axis labels</li>
+                        </ul>
+
+                        <hr>
+                        <h2 class="section-heading-h2">Conclusion</h2>
+                        <p>Yay! We're done with this story on basic data visualizations! To recap, we went through visualizations that are appropriate to both categorical data and numerical data. We listed the steps to construct a frequency distribution and compared the differences between a histogram and a bar chart. In the end, we also talked about faulty graphs and traits that tend to mislead interpretations. In our next story, we'll jump into numbers and formulas and discuss the three main aspects of a distribution.</p>
+                        
+                        <hr>
+                        <a class="section-heading-h3" href="../blog-files/statistics-4.html">Next: The Three Aspects of a Distribution</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <!-- Icons from Font Awesome -->
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://www.kaggle.com/phchen5" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-kaggle fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/@bensvlog10" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/phchen5" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Ben's Blog 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>

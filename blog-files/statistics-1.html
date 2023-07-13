@@ -6,41 +6,44 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Ben's Blog - Introduction to Statistical Study</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
         <!-- Latex -->
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$', '$']]}})
+        </script>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
     </head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="index.html">Ben's Blog</a>
+                <a class="navbar-brand" href="../index.html">Ben's Blog</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="blog-main.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="kaggle-main.html">Kaggle</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="course-materials.html">Study Materials</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../blog-main.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../kaggle-main.html">Kaggle</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../course-materials.html">Study Materials</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Page Header-->
-        <header class="masthead" style="background-image: url('assets/img/statistics-1-topicbackground.webp')">
+        <header class="masthead" style="background-image: url('../assets/img/blog-img/page-of-content/statistics-1-topicbackground.webp')">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
@@ -49,7 +52,7 @@
                             <h2 class="subheading">Let's learn statistics!</h2>
                             <span class="meta">
                                 Posted by
-                                <a href="#!">Ben Chen</a>
+                                <a href="../about.html">Ben Chen</a>
                                 on September 01, 2021
                             </span>
                         </div>
@@ -86,7 +89,7 @@
                         <hr>
                         <h2 class="section-heading-h2">What is Statistics?</h2>
                         <p><mark><strong>Statistics</strong></mark> is a branch of mathematics that transforms data into useful information for decision-makers. For example, consider the simple table of data below:</p>
-                        <a href="#!"><img class="img-fluid" src="assets/img/statistics-1-table.png" alt="..." /></a>
+                        <img class="img-fluid" src="../assets/img/blog-img/intro-to-stats/statistics-1-table.png" alt="..." />
                         <p>The table of data consists of 5 students and their grades. We can transform this table of data into more informative statistics like mean, maximum grade, minimum grade, etc. By adding all the grades and dividing by five, we can find that the mean grade is 57.6.</p>
                         <p>$$\frac{60+56+58+66+48}{5}=57.6$$</p>
                         <p>By calculating the mean score, the teacher can get a rough idea of how the class is performing as a whole. The teacher could also identify which students are underperforming and may need additional help. These interpretations of the statistic, however, would depend on domain knowledge. For example, we might think that the grade is out of 100 points, which would make the grade numbers look ugly. However, if the grade is only out of 70 points, then the results aren’t too bad after all. Knowing how many total points the grade is out of is <strong><mark>domain knowledge</mark></strong>. Combining domain knowledge with statistics, the teacher is able to derive useful insights for decision-making.</p>
@@ -101,17 +104,17 @@
                         <p>So what's the difference between these two statistics?</p>
                         <h3 class="section-heading-h3">Descriptive Statistics</h3>
                         <p><strong><mark>Descriptive Statistics</mark></strong> collect, summarize and describe data. Consider the same grade dataset but with 10 students. </p>
-                        <a href="#!"><img class="img-fluid" src="assets/img/statistics-1-table2.webp" alt="..." /></a>
+                        <img class="img-fluid" src="../assets/img/blog-img/intro-to-stats/statistics-1-table2.webp" alt="..." />
                         <p>We can derive a summary statistic for this small dataset easily.</p>
-                        <a href="#!"><img class="img-fluid" src="assets/img/statistics-1-summarystats.webp" alt="..." /></a>
+                        <img class="img-fluid" src="../assets/img/blog-img/intro-to-stats/statistics-1-summarystats.webp" alt="..." />
                         <p>The summary statistic here consists of <em>the count of observation</em>, <em>mean</em>, <em>standard deviation</em>, <em>minimum value</em>, <em>25% percentile</em>, <em>50% percentile</em> (median), <em>75% percentile</em> and <em>maximum value</em>. These statistics describe the grade of the 10 students and give us a good idea about the grade distribution. To visualize the distribution even better, we can even plot out a histogram. </p>
-                        <a href="#!"><img class="img-fluid" src="assets/img/statistics-1-distribution.webp" alt="..." /></a>
+                        <a href="#!"><img class="img-fluid" src="../assets/img/blog-img/intro-to-stats/statistics-1-distribution.webp" alt="..." /></a>
                         <p>For those with zero background in statistics, you might have no idea what these summary statistics and graphs are about. Don't worry! We'll go through them in the coming stories. For now, just know that the summary statistics and the histogram are both descriptive statistics. They “describe” the data. </p>
                         <h3 class="section-heading-h3">Inferential Statistics</h3>
                         <p><mark><strong>Inferential Statistics</strong></mark> draw conclusions and/or make decisions concerning a population <u>based only on sample data</u>. Oftentimes, it’s merely impossible or too costly to gather data from every single target. If 10,000 people enrolled in a course, it would be silly to go to all 10,000 people to ask for their grades. A smarter and more efficient approach is to collect data from a portion (eg. say 300 people) of that 10,000 people and use that small portion to represent the entire 10,000 people.</p>
                         <blockquote class="blockquote">Terminology Alert!</blockquote>
                         <p>The entire group that you want to draw conclusions about is called the <mark><strong>Population</strong></mark>. The small portion that you collect data from to represent the entire group is called the <mark><strong>Sample</strong></mark>. </p>
-                        <a href="#!"><img class="img-fluid" src="assets/img/statistics-1-populationsample.webp" alt="..." /></a>    
+                        <img class="img-fluid" src="../assets/img/blog-img/intro-to-stats/statistics-1-populationsample.webp" alt="..." />  
                         <p>One important acknowledgment about extracting samples from the population is the sampling method. You can imagine that if you only select girls in your sample, the sample may not be representative of the population (because the population consists of both boys and girls). So it’s important to use an appropriate, non-biased sampling method. The most common sampling technique is <mark><strong>random sampling</strong></mark>, in which you can compare the selection process to that of picking from a hat blindfolded. Essentially, every single target in the population has an equal chance of being selected for the sample. </p>
                         <p>By using an appropriate sampling method, your sample should more or less be representative of the population. After you collect data from your sample, you can calculate some measures (eg. mean) based on the sample data.</p>
                         <blockquote class="blockquote">Terminology Alert!</blockquote>
@@ -120,7 +123,7 @@
                         <span class="caption text-muted">Instead, we can only estimate the <strong>population parameter</strong>, and we estimate it using <strong>sample statistics</strong>.</span>
                         <p>Samples should be representative of the population (as we discussed before using the appropriate sampling method), so the mean of the sample (sample statistics) should also be a good estimate of the mean of the population (population parameter). We say sample statistics are <mark><strong>unbiased estimators</strong></mark> of population parameters.</p>
                         <p>This is the idea behind inferential statistics. We use a sample to make “inferences” about the greater population. The diagram below summarizes this process.</p>
-                        <a href="#!"><img class="img-fluid" src="assets/img/statistics-1-inferentialstats.webp" alt="..." /></a>
+                        <img class="img-fluid" src="../assets/img/blog-img/intro-to-stats/statistics-1-inferentialstats.webp" alt="..." /><br>
                         <ol>
                             <li>What is your goal for the study? Determine the population of your subject and what you want to learn about the subject (population parameters).</li>
                             <li>Select a sample from the population (with the appropriate sampling technique).</li>
@@ -142,7 +145,7 @@
                         <p>We also stressed the importance of an appropriate sampling method. Take some time to digest the information, but be aware that this is just the surface of a tremendous field of study. We’re not even done with our first topic of the series. In the next story, we’ll talk about variables!</p>
                         
                         <hr>
-                        <a class="section-heading-h3" href="#!">Next: Numerical and Categorical Variables</a>
+                        <a class="section-heading-h3" href="../blog-files/statistics-2.html">Next: Numerical and Categorical Variables</a>
                         
                     </div>
                 </div>
@@ -188,6 +191,6 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="../js/scripts.js"></script>
     </body>
 </html>
