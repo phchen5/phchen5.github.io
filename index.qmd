@@ -1,0 +1,7 @@
+---
+title: "Ben's Personal Website"
+---
+
+Welcome to this website!
+
+Click About in the navigation bar to learn more about me!
