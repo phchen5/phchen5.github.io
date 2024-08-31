@@ -1,24 +1,24 @@
 ---
-title: 'Blog Post number 1'
-date: 2012-08-14
-permalink: /posts/2012/08/blog-post-1/
+title: An ENTRO (intro) to ENTROpy
+date: 2024-08-31
+permalink: /posts/entropy/
 tags:
-  - cool posts
-  - category1
-  - category2
+  - statistics
+  - entropy
+  - categorical
 ---
 
 ## Attribution:
 
-The information in this post is largely derived/inspired from StatQuest with Josh Starmer, who is an amazing YouTuber discussing statistics. I highly recommend checking out his video on Entropy as well.
+The information in this post is largely derived/inspired from [StatQuest with Josh Starmer](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw), who is an amazing YouTuber discussing statistics/data science. I highly recommend checking out his video on [Entropy](https://www.youtube.com/watch?v=YtebGVx-Fxw) as well.
 
 ## Introduction
 
-Hello there! Welcome to this post on Entropy. Entropy is a crucial concept that appears in various fields, ranging from statistics to machine learning. In this post, we’ll go beyond the formulas to discuss the essence of entropy and what the numbers really mean. Let’s dive in!
+Hello there! Welcome to this post on entropy. Entropy is a crucial concept that appears in various fields, ranging from statistics to machine learning. In this post, we’ll go beyond the formulas to discuss the essence of entropy and what the numbers really mean. Let’s dive in!
 
 ## What is Entropy?
 
-So, what is entropy? Essentially, entropy is a number that quantifies similarities (or differences). Let’s explore this with an example.
+So, what is entropy? Essentially, **entropy** is a number that quantifies similarities (or differences). Let’s explore this with an example.
 
 ## Example
 
@@ -36,13 +36,13 @@ $$
 -\sum_x{P(X=x)log[P(X=x)]}
 $$
 
-Hmmm…that looks complicated. I really don’t like reading mathematical equations (nobody does…right?). So, why don’t we simplify it by using the concept of "surprise." Everyone knows what “surprise” means, right? When an unlikely event happens, we are surprised! But if an event happens frequently, we aren't surprised at all.
+Hmmm…that looks complicated. I really don’t like reading mathematical equations (nobody does…right?). So, why don’t we simplify it by using the concept of "surprise." Everyone knows what “surprise” means, right? When an unlikely event happens, we are surprised! But if an event happens frequently, we won't be surprised at all.
 
 We can apply this concept to the two groups in our example. If we randomly pick a child from the first group, we would be surprised if we picked the boy (because there is only one out of ten children). On the other hand, we wouldn’t be surprised to pick a girl because there are many in group 1. This leads to a crucial relationship:
 
 > Surprise is inversely related to probability. A low probability event (like picking a boy in group 1) results in high surprise. A high probability event (like picking a girl in group 1) results in low surprise.
 
-Does this mean we can quantify surprise as the inverse of probability?
+Does this mean we can quantify surprise as <ins>the inverse of probability</ins>?
 
 $$
 \frac{1}{\text{probability}}
@@ -72,11 +72,11 @@ $$
 \text{surprise} = log(\frac{1}{0}) = log(1)-log(0)=\text{undefined}
 $$
 
-This makes sense because:
+This undefined result is actually sensible since:
 
-> It doesn’t make sense to quantify the surprise of something that never happens.
+> It doesn't make sense to quantify the surprise of something that never happened before.
 
-Let's visualize this concept. The graph below shows probability on the x-axis and surprise on the y-axis. As probability approaches 1, surprise is 0. As probability approaches 0, surprise increases significantly.
+Let's visualize this relationship. The graph below shows probability on the x-axis and surprise on the y-axis. As probability approaches 1, surprise is 0. As probability approaches 0, surprise increases significantly.
 
 <div style="text-align: center;">
     <img src="/images/entropy.png" alt="Entropy Image" style="width: 50%; max-width: 300px;">
@@ -114,7 +114,7 @@ $$
 \end{align*}
 $$
 
-This shouldn’t be too hard to comprehend. But what does this expected value of surprise have anything to do with entropy? If you haven’t already realized, you have just calculated entropy! That’s right! Entropy is really just the expected value of surprise. Let’s put the formula of entropy and the expected value of surprise side by side.
+This shouldn’t be too hard to comprehend. But what does this expected value of surprise have anything to do with entropy? If you haven’t already realized, <ins>you have just calculated entropy</ins>! That’s right! Entropy is really just the expected value of surprise. Let’s put the formula of entropy and the expected value of surprise side by side.
 
 $$
 \begin{align*}
@@ -125,7 +125,7 @@ $$
 
 These two formulas don’t look the same at all, but wait until I do a little bit of magic.
 
-1. PPlug in the formula for surprise:
+1. Plug in the formula for surprise:
 
 $$
 \text{Expected Value of Surprise} = \sum_x{log(\frac{1}{P(x))}) \cdot P(x)} 
@@ -163,7 +163,7 @@ $$
 
 They are the same! In conclusion:
 
-> Entropy quantifies similarities (or differences) and is the expected value of surprise. When a group is more homogeneous, entropy is lower, indicating less surprise.
+> Entropy quantifies similarities (or differences) and is the expected value of surprise. When a group is more homogeneous, entropy is lower, indicating less surprise. When a group is less homogeneous, entropy is higher, indicating more surprise.
 
 ## Applications of Entropy
 
